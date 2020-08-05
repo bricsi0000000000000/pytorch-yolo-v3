@@ -468,6 +468,7 @@ class Darknet(nn.Module):
 
                 conv_weights = conv_weights.view_as(conv.weight.data)
                 conv.weight.data.copy_(conv_weights)
+           
                 
     def save_weights(self, savedfile, cutoff = 0):
             
